@@ -2,5 +2,5 @@ output region {
     value = var.region
 }
 output "AZ" {
-    value =
+    value = data.aws_availability_zones.available.names [0]
 }
